@@ -3,7 +3,7 @@ import { useState } from "react";
 const metricSystems = [
   { label: "Select a metric system", value: "" },
   { label: "Decimal", value: "decimal" },
-  { label: "Anglosajón", value: "imperial" },
+  { label: "Anglo-Saxon", value: "imperial" },
 ];
 
 const valuePounds = 2.21;
@@ -61,7 +61,6 @@ function App() {
         if (currentMestricSystem) {
           value = value * valueInch;
         }
-        console.log(value, minStature, maxStature);
         if (value < minStature || value > maxStature) {
           return `The height must be greater than or equal to ${
             currentMestricSystem ? "1.4mts" : `${minStature.toFixed(2)}in`
@@ -224,7 +223,7 @@ function App() {
         </section>
       </main>
       <footer className="footer-container">
-        <blockquote className="">Autor: José Daniel Pumarejo García</blockquote>
+        <blockquote>Author: José Daniel Pumarejo García</blockquote>
       </footer>
     </>
   );

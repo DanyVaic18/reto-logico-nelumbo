@@ -217,10 +217,10 @@ function App() {
         </form>
 
         <section>
-          <h4>
+          <p>
             All Calories:{" "}
-            <b>{calculateCalories(age, stature, weight).toFixed(4)}</b>
-          </h4>
+            <b>{calculateCalories(age, stature, weight).toFixed(4)}</b> (cal)
+          </p>
         </section>
       </main>
       <footer className="footer-container">

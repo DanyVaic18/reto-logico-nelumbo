@@ -7,6 +7,10 @@ Calculate the amount of calories (kcal) that a person should consume in a day.
 - npm install
 - npm run dev
 
+## Deploy
+
+- npm run deploy
+
 ### Metric Systems
 
 - Decimal

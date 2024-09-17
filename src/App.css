@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;    
+  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,4 +26,68 @@ html {
 
 body {
   min-width: 320px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin: 3% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-container {
+  margin: auto 5% 3%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.field-text {
+  min-width: 200px;
+  width: 100%;
+  max-width: 300px;
+  padding: 0.375rem 0.5rem;
+  border: 2px solid #121212;
+  border-radius: 0.375rem;
+  outline: none;
+}
+
+.field-text:disabled {
+  border-color: #242424;
+}
+
+.field-text:focus {
+  border: 2px solid #818181;
+}
+
+.field-select {
+  min-width: 200px;
+  width: 100%;
+  max-width: 300px;
+  padding: 0.375rem 0.5rem;
+  border-radius: 0.375rem;
+  border: 2px solid #121212;
+  outline: none;
+}
+
+.field-select:focus {
+  border: 2px solid #818181;
+}
+
+.field-error {
+  color: #f74444;
+  font-size: 0.8rem;
+  max-width: 300px;
 }
